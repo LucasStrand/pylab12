@@ -4,13 +4,15 @@ import tkinter.messagebox as tkmsgbox
 import tkinter.scrolledtext as tksctxt
 
 firebaseConfig = {
-	"apiKey": "AIzaSyB4LgQa5mbKRKWCH990yLZONP3aTlSJozk",
-    "authDomain": "lab12-11a0c.firebaseapp.com",
-    "databaseURL": "https://lab12-11a0c.firebaseio.com",
-    "projectId": "lab12-11a0c",
-    "storageBucket": "lab12-11a0c.appspot.com",
-    "messagingSenderId": "685381785952",
-    "appId": "1:685381785952:web:9a3898e648c513e783a605"
+	
+	"apiKey": "AIzaSyA1Kj4OR-O3w3wYjpU6Pm0LG1RP0nxFY7Q",
+    "authDomain": "pylab12-f75d7.firebaseapp.com",
+    "databaseURL": "https://pylab12-f75d7-default-rtdb.firebaseio.com",
+    "projectId": "pylab12-f75d7",
+    "storageBucket": "pylab12-f75d7.appspot.com",
+    "messagingSenderId": "1076535734903",
+    "appId": "1:1076535734903:web:bdfed7c3bc9d2166a2cc72",
+    "measurementId": "G-K0QG3GPZRB"
 }
 
 
@@ -99,7 +101,7 @@ def sendButtonClick():
 	global g_subscribed
 
 	if g_subscribed == False:
-		printToMessages('You need to be subscribed to send a message.')
+		printToMessages('You have to be subscribed to send a message.')
 	elif g_app.name.get() == '' or g_app.textIn.get() == '':
 		printToMessages('You need to have set a name and typed a message to be able to send.')
 	else:
